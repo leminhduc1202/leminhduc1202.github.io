@@ -15,8 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const target = this.getAttribute('href').substring(1);
         const targetContent = document.getElementById(target);
   
-        // Hiển thị nội dung tab-content tương ứng
+        if (this.getAttribute('href') == "#about") {
+          window.location.href = "home.html"
+        } else {
+           // Hiển thị nội dung tab-content tương ứng
         targetContent.style.display = 'block';
+        }
       });
     });
   });
