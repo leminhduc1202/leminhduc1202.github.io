@@ -1,4 +1,4 @@
-@import url("https://db.onlinewebfonts.com/c/121de5efbf26b4c95627608ad4dd1621?family=Bellota");
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 .tab-bar {
     background-color: #f2f2f2;
@@ -9,8 +9,10 @@
     padding: 10px 20px;
     text-decoration: none;
     color: #333;
-    font-family: Bellota, sans-serif;  
-  }
+    font-family: 'Bellota', cursive;
+    font-weight: 700;
+    font-size: x-large;
+    }
   
   .tab:hover {
     background-color: #ddd;
