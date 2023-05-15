@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
         if (this.getAttribute('href') == "#about") {
           window.location.href = "home.html"
+        } else if (this.getAttribute('href') == "#project") {
+          window.location.href = "project/project-page.html"
         } else {
            // Hiển thị nội dung tab-content tương ứng
         targetContent.style.display = 'block';

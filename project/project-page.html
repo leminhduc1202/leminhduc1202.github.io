@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="project-style.css" />
+    <nav>
+        <a href="/home.html">HTML</a> |
+        <a href="/assets/css/fontawesome-all.min.css">CSS</a> |
+        <a href="/assets/js/main.js">JavaScript</a> |
+    </nav>
+
+    <script>
+        function displayTime() {
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+
+            // Định dạng giờ 12h (AM/PM)
+            var ampm = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12;
+            hours = hours ? hours : 12; // Đặt giờ 0 thành 12
+
+            // Thêm số 0 vào đầu nếu giờ, phút, giây < 10
+            hours = padZero(hours);
+            minutes = padZero(minutes);
+            seconds = padZero(seconds);
+
+            // Hiển thị giờ đếm trong một thẻ có id là "clock"
+            document.getElementById('clock').innerHTML = hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+
+            // Kiểm tra điều kiện và hiển thị thông báo
+            if (hours === 11 && minutes === 33 && seconds === 0) {
+                showNotification('Đã đến lúc trưa!');
+            }
+
+            // Cập nhật đồng hồ mỗi giây
+            setTimeout(displayTime, 1000);
+        }
+
+        // Hàm thêm số 0 vào đầu nếu giờ, phút, giây < 10
+        function padZero(num) {
+            return (num < 10 ? '0' : '') + num;
+        }
+
+        // Hàm hiển thị thông báo
+        function showNotification(message) {
+            alert(message);
+        }
+    </script>
+
+</head>
+
+<body onload="displayTime()">
+    <img class="logo" src="images/project-logo.svg">
+    <img class="back-ground " src="images/project-background.png" alt="Your Image" style="width: 50%; height: auto;">
+    <section>
+        <h1>WWF</h1>
+        <p class="content">The World Wide Fund for Nature (WWF) is an international organization working on issues
+            regarding the
+            conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was
+            founded in 1961.</p>
+        <br />
+        <p class="content">Choose your favorite Web language:</p>
+        <form>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </form>
+        <br />
+        <form>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label>
+        </form>
+        <br/>
+        <input type="button" value="Submit">
+    </section>
+
+    <article>
+        <h2>Google Chrome</h2>
+        <p class="content">Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's
+            most popular web browser today!</p>
+    </article>
+
+    <article>
+        <h2>Mozilla Firefox</h2>
+        <p class="content">Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the
+            second most popular web browser since January, 2018.</p>
+    </article>
+
+    <article>
+        <h2>Microsoft Edge</h2>
+        <p class="content">Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge
+            replaced Internet Explorer.</p>
+    </article>
+
+    <article class="all-browsers">
+        <h1>Most Popular Browsers</h1>
+        <article class="browser">
+            <h2>Google Chrome</h2>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular
+                web browser today!</p>
+        </article>
+        <article class="browser">
+            <h2>Mozilla Firefox</h2>
+            <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most
+                popular web browser since January, 2018.</p>
+        </article>
+        <article class="browser">
+            <h2>Microsoft Edge</h2>
+            <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced
+                Internet Explorer.</p>
+        </article>
+    </article>
+
+    <aside>
+        <div id="clock"></div>
+        <p> &copy; The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions,
+            international
+            pavilions, award-winning fireworks and seasonal special events.</p>
+    </aside>
+
+    <h4 class="sign-up">
+        <p> &reg; Don’t have an account?<a href="/index.html"> Sign Up</a></p>
+    </h4>
+
+    <footer>
+        <p><a href="mailto:duc.leminh.dn@gmail.com">duc.leminh.dn@gmail.com</a></p>
+    </footer>
+</body>
+
+</html>
