@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
           "https://sites.google.com/view/mdideas/home-page?authuser=0";
       } else if (this.getAttribute("href") == "#admob") {
         window.location.href = "app-ads.txt";
+      } else if (this.getAttribute("href") == "#privacy") {
+        window.location.href = "privacy_policy.html";
       } else {
         targetContent.style.display = "block";
       }
