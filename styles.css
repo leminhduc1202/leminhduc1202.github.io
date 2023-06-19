@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 .tab-bar {
-    background-color: #f2f2f2;
+    background-color: #000000;
     display: flex;
   }
   
   .tab {
     padding: 10px 20px;
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-family: 'Bellota', cursive;
     font-weight: 700;
     font-size: x-large;
     }
   
   .tab:hover {
-    background-color: #ddd;
+    background-color: #F7971D;
   }
   
   .tab-content {
