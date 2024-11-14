@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "app-ads.txt";
       } else if (this.getAttribute("href") == "#privacy") {
         window.location.href = "privacy_policy.html";
+      } else if (this.getAttribute("href") == "#learning") {
+        window.location.href = "learning/learning.html";
       } else {
         targetContent.style.display = "block";
       }

@@ -1,0 +1,270 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div {
+  /* display: block; */
+}
+
+#main {
+}
+
+#header-content {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 46px;
+  background-color: black;
+  z-index: 1;
+}
+
+#header-content .search {
+  float: right;
+}
+
+#nav {
+  display: inline-block;
+}
+
+#nav,
+.subnav {
+  list-style-type: none;
+}
+
+#nav li {
+  position: relative;
+}
+#nav > li {
+  display: inline-block;
+}
+
+#nav li a {
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+  display: block;
+}
+
+#nav > li > a {
+  color: white;
+  text-transform: uppercase;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+  color: black;
+  background-color: #ccc;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav .subnav {
+  display: none;
+  min-width: 160px;
+  top: 100%;
+  left: 0;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+  color: black;
+  padding: 0 12px;
+  line-height: 40px;
+}
+
+#nav .ti-angle-down {
+  font-size: 14px;
+}
+
+.search .ti-search {
+  height: 14px;
+  color: white;
+  line-height: 46px;
+  padding: 0 21px;
+}
+
+.search:hover {
+  color: white;
+  background-color: red;
+  cursor: pointer;
+}
+
+#slider {
+  position: relative;
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url("/images/gallery/thumbs/01.jpg") top center / cover no-repeat;
+}
+
+#footer-content {
+}
+
+#slider .text-content {
+  position: absolute;
+  bottom: 48px;
+  text-align: center;
+  width: 100%;
+}
+
+#slider .text-heading {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#slider .text-description {
+  font-size: 15px;
+  padding-top: 25px;
+}
+
+#main-content {
+  position: relative;
+}
+
+#main-content .the-band {
+  background-color: white;
+  position: relative;
+  margin: 0 90px;
+  padding: 64px 14px;
+}
+
+#main-content .main-title {
+  font-weight: 500;
+  font-size: 30px;
+  margin: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+#main-content .sub-title {
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+}
+
+#main-content .main-description {
+  font-size: 15px;
+  margin-top: 15px;
+  text-align: justify;
+}
+
+#team-member {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 64px 16px;
+}
+
+.member {
+  text-align: center;
+  width: 30%;
+}
+
+.member p {
+  font-size: 15px;
+  padding: 15px 0;
+}
+
+.member img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.the-tour {
+  background-color: black;
+  position: relative;
+  padding: 64px 14px;
+}
+
+.the-tour > .main-title {
+  font-weight: 500;
+  font-size: 30px;
+  margin: 10px 0;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.the-tour > .sub-title {
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+  color: white;
+}
+
+.tour-calendar {
+  color: white;
+  list-style: none;
+}
+
+.tour-calendar > .calendar {
+  background-color: white;
+  height: 40px;
+  color: #757575;
+  margin: 0 90px;
+  padding: 8px 16px;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+
+.calendar > .tour-note {
+  background-color: red;
+  color: white;
+  padding: 0 8px;
+  margin-left: 16px;
+}
+
+.calendar > .tour-tag {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+
+.contact {
+  background-color: white;
+  position: relative;
+  padding: 64px 14px;
+}
+
+.contact > .main-title {
+  font-weight: 500;
+  font-size: 30px;
+  margin: 10px 0;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.contact > .sub-title {
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+  color: black;
+}
