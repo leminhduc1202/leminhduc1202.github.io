@@ -220,6 +220,7 @@ div {
   padding: 8px 16px;
   position: relative;
   border-bottom: 1px solid #ddd;
+  align-items: center;
 }
 
 .calendar > .tour-note {
@@ -233,13 +234,14 @@ div {
   position: absolute;
   right: 0;
   bottom: 0;
+  top: 0;
   background-color: black;
   border-radius: 50%;
   color: white;
   font-size: 15px;
   text-align: center;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -267,4 +269,199 @@ div {
   font-style: italic;
   text-align: center;
   color: black;
+}
+
+.place {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 32px 90px;
+}
+
+.place-name {
+  background-color: white;
+  position: relative;
+  width: 30%;
+}
+
+.place-name img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.place-name > img:hover {
+  opacity: 0.6;
+}
+
+.place-name p {
+  margin: 16px 16px;
+}
+
+.ticket-click {
+  padding: 8px 16px;
+  margin: 16px 16px;
+  background-color: black;
+  color: white;
+  user-select: none;
+  border: none;
+  cursor: pointer;
+}
+
+.ticket-click:hover {
+  color: black;
+  background-color: #ccc;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal-container {
+  position: relative;
+  display: flexbox;
+  background-color: white;
+  width: 900px;
+  max-width: calc(100% - 32px);
+  min-height: 200px;
+  animation: modalFadeIn ease 0.5s;
+}
+
+.modal-header {
+  color: white;
+  background-color: #009688;
+  height: 129px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 30px;
+}
+
+.modal-icon-margin {
+  margin-right: 16px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 16px;
+  color: white;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-body {
+  padding: 16px;
+}
+
+.modal-input {
+  display: block;
+  font-size: 15px;
+  padding: 8px;
+  margin: 16px 0px;
+  width: 100%;
+}
+
+#buy-tickets {
+  width: 100%;
+  padding: 16px;
+  margin: 16px 0px;
+  background-color: #009688;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#buy-tickets:hover {
+  opacity: 0.8;
+  color: black;
+}
+
+.modal-footer {
+  text-align: right;
+  padding: 16px;
+}
+
+.footer-color {
+  color: #2196f3;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0.5;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.local {
+  padding: 32px 90px;
+  font-size: 18px;
+}
+
+.local > p {
+  margin-bottom: 8px;
+}
+
+.form {
+  padding: 32px 0px;
+  padding-right: 90px;
+  font-size: 15px;
+}
+
+.input-form {
+  width: 100%;
+  max-width: calc(100% - 8px);
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.btn-send {
+  float: right;
+  padding: 8px 16px;
+  margin: 16px 8px;
+  border: none;
+  color: white;
+  background-color: black;
+}
+
+/* Common  */
+
+.col {
+  float: left;
+}
+
+.col-half {
+  width: 50%;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.padding {
+  padding: 8px;
 }
