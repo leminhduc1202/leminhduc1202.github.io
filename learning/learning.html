@@ -11,18 +11,18 @@
     <div id="main">
         <div id="header-content">
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Contract</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contract</a></li>
                 <li>
                     <a href="#">More
                         <i class="ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -39,7 +39,7 @@
         </div>
         <div id="main-content">
             <!-- The band section -->
-            <div class="the-band">
+            <div id="band" class="the-band">
                 <h2 class="main-title">The Band</h2>
                 <div class="sub-title">We love music</div>
                 <div class="main-description">
@@ -62,7 +62,7 @@
                 </div>
 
              <!-- Tour section -->
-            <div class="the-tour">
+            <div id="tour" class="the-tour">
                 <h2 class="main-title">Tour dates</h2>
                 <div class="sub-title">Remember to book your tickets!</div>
                 <ul class="tour-calendar">
@@ -109,7 +109,7 @@
             </div>
 
              <!-- Contact section -->
-            <div class="contact">
+            <div id="contact" class="contact">
                 <h2 class="main-title">Contact</h2>
                 <div class="sub-title">Fan? Drop a note!</div>
                 <div class="row">
@@ -122,25 +122,36 @@
                         <form action="">
                             <div class="row">
                                  <div class="col col-half">
-                                    <input class="input-form" type="text" placeholder="Name">
+                                    <input class="input-form" type="text" placeholder="Name" required>
                                 </div>
                                 <div class="col col-half">
-                                    <input class="input-form" type="email" placeholder="Email">
+                                    <input class="input-form" type="email" placeholder="Email" required>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col col-full">
-                                    <input class="input-form" type="text" placeholder="Message">
+                                    <input class="input-form" type="text" placeholder="Message" required>
                             </div>
                             </div>
-                            <input class="btn-send" type="submit" value="SEND">
-                    </div>
+                            <input class="btn-send ticket-click" type="submit" value="SEND">
                     </div>
                 </div>
+            </div>
         </div>
     
         <div id="footer-content">
-
+            <img src="/images/pic01.jpg" alt="Image b">
+            <div class="footer-link">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-microsoft"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+                <p>Powered by  
+                    <a  href="https://leminhduc1202.github.io/">Duke</a> 
+                </p>
+            </div>
         </div>
         <div class="modal js-modal">
             <div class="modal-container js-modal-container">

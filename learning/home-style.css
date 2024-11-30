@@ -6,6 +6,7 @@
 
 html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
 }
 
 div {
@@ -108,6 +109,36 @@ div {
 }
 
 #footer-content {
+  width: 100%;
+}
+
+.footer-link {
+  padding: 64px 16px;
+  text-align: center;
+}
+
+.footer-link > a {
+  width: 24px;
+  height: 24px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.footer-link > a:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.footer-link > p {
+  margin: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.footer-link > p > a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#footer-content > img {
+  width: 30%;
 }
 
 #slider .text-content {
